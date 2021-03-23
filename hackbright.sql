@@ -169,13 +169,13 @@ ALTER TABLE ONLY public.students ALTER COLUMN id SET DEFAULT nextval('public.stu
 
 COPY public.grades (id, student_github, project_title, grade) FROM stdin;
 1	jhacks	Markov	10
-2	jhacks	Blockly\n	2
 4	sdevelops	Blockly	100
 3	sdevelops	Markov	50
 5	maini	Cat House	199
 6	stinky	Cat House	201
 7	stinky	Slime Magic	75
 8	s-gerrity	Blockly	25
+2	jhacks	Blockly	2
 \.
 
 
@@ -188,8 +188,8 @@ COPY public.projects (id, title, description, max_grade) FROM stdin;
 2	Blockly	Programmatic Logic Puzzle Game	100
 22	Coffee Shop	Coffee Shop Website Order Powered by AJAX	50
 3	Slime Magic	Create a slimey website that steals secrets	150
-4	Markov	Discord Bot Using Markov Chains	75
 11	Cat House	Recreation of Mobile Game Neko Atsume	200
+4	Markov Discord	Discord Bot Using Markov Chains	75
 \.
 
 
